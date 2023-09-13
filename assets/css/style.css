@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  min-width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header .main-header .header-top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+header .main-header .header-top ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+header .main-header .header-top ul li a {
+  color: #999;
+  font-size: 12px;
+  line-height: 15px;
+}
+header .main-header .header-buttom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main-header .header-buttom .logo img {
+  width: 146px;
+  height: 100%;
+  margin-bottom: -3px;
+}
+header .main-header .header-buttom .search-input {
+  width: 600px;
+  position: relative;
+}
+header .main-header .header-buttom .search-input input {
+  width: 100%;
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  background-color: #f3f3f3;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 6px;
+  padding: 10px 40px 10px 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: all ease 0.3s;
+  line-height: 0;
+}
+header .main-header .header-buttom .search-input i {
+  position: absolute;
+  top: 35%;
+  right: 15px;
+  color: #f27a1a;
+  font-size: 18px;
+}
+header .main-header .header-buttom .account-navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  padding-top: 2px;
+}
+header .main-header .header-buttom .account-navigator a {
+  display: flex;
+}
+header .main-header .header-buttom .account-navigator a:hover .icon .silver {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+header .main-header .header-buttom .account-navigator a:hover .icon .orange {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+header .main-header .header-buttom .account-navigator a:hover p {
+  color: #f27a1a;
+  transition: color 0.4s ease;
+}
+header .main-header .header-buttom .account-navigator a .icon {
+  position: relative;
+}
+header .main-header .header-buttom .account-navigator a .icon .silver {
+  height: 16px;
+  width: 16px;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+header .main-header .header-buttom .account-navigator a .icon .orange {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  height: 16px;
+  width: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+header .main-header .header-buttom .account-navigator a p {
+  font-family: source_sans_prosemibold, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+  color: #333333;
+  padding-left: 5px;
+  margin-top: 2px;
+  transition: color 0.4s;
+}
+header .main-header .header-buttom .account-navigator .log-reg img {
+  margin-bottom: 2px !important;
+}
+header .main-header .header-buttom .account-navigator .basket img {
+  height: 18px !important;
+  width: 18px !important;
+}
+header .header-nav {
+  background-color: #fff;
+  border: none !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  height: 34px;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 900;
+}
+header .header-nav nav {
+  position: relative;
+}
+header .header-nav nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-nav nav ul li a {
+  font-family: source_sans_prosemibold, sans-serif !important;
+  color: #333;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.18px;
+}
+
+main {
+  background-color: #fafafa;
+}
+main section {
+  width: 415px;
+  margin: 0 auto;
+  padding-block: 40px;
+}
+main section .login-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -20px 0px 20px 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main section .login-welcome h1 {
+  font-size: 22px;
+  font-weight: 400;
+}
+main section .login-header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+main section .login-header h1 {
+  width: 205px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px 5px 0px 0px;
+  height: 50px;
+  border-bottom: none;
+  background: #fff;
+  text-align: center;
+  font-size: 15px;
+  color: #f27a1a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  padding-top: 17px;
+}
+main section .login-header h1:last-child {
+  background: #e3e3e3;
+  color: #515151;
+}
+main section .login-input {
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  padding: 35px 40px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+main section .login-input .inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+main section .login-input .inputs label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: system-ui;
+}
+main section .login-input .inputs input {
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+  height: 40px;
+  font-family: system-ui;
+  color: #4b4b4b;
+  outline: none;
+  line-height: 30px;
+  outline: none;
+  padding: 0 10px;
+  width: 100% !important;
+  border-radius: 3px !important;
+  background-color: #fafafa !important;
+}
+main section .login-input a {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: end;
+  text-decoration: underline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000;
+}
+main section .login-input button {
+  margin-block: 20px;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  letter-spacing: 0.8px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  background: #f27a1a;
+  color: #fff;
+}
+main section .login-input .social-login {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section .login-input .social-login .facebook-login {
+  border: solid 1px #e6e6e6;
+  padding-block: 4px;
+  width: 160px;
+  display: flex;
+  padding: 1px 40px 1px 12px;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .login-input .social-login .facebook-login .facebook-background {
+  width: 30px;
+  background-color: rgb(76, 110, 168);
+  height: 30px;
+  border-radius: 4px;
+  padding: 6px 0px 0px 9.5px;
+  font-size: 17px;
+  color: #fff;
+}
+main section .login-input .social-login .facebook-login .facebook-login-text {
+  font-family: system-ui;
+  margin-bottom: 5px;
+}
+main section .login-input .social-login .facebook-login .facebook-login-text span {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+main section .login-input .social-login .facebook-login .facebook-login-text p {
+  font-size: 11px;
+  color: #949494;
+  margin-top: -3px;
+}
+main section .login-input .social-login .google-login {
+  border: solid 1px #e6e6e6;
+  padding-block: 4px;
+  width: 160px;
+  display: flex;
+  padding: 1px 45px 1px 12px;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .login-input .social-login .google-login .google-background {
+  background-color: rgb(241, 66, 54);
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  padding: 7px 0px 0px 7px;
+  font-size: 17px;
+  color: #fff;
+}
+main section .login-input .social-login .google-login .google-login-text {
+  font-family: system-ui;
+  margin-bottom: 5px;
+}
+main section .login-input .social-login .google-login .google-login-text span {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+main section .login-input .social-login .google-login .google-login-text p {
+  font-size: 11px;
+  color: #949494;
+  margin-top: -3px;
+}
+main section .login-input p {
+  color: #666;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer {
+  background-color: black;
+}
+footer .container-main {
+  max-width: 70%;
+  margin: 0 auto;
+}
+footer .container-main .list_foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 45px;
+}
+footer .container-main .list_foot .list-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+footer .container-main .list_foot .list-footer .footer-links {
+  margin-block: 24px;
+}
+footer .container-main .list_foot .list-footer .footer1-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 260px;
+}
+footer .container-main .list_foot .list-footer .footer1-app .troy {
+  background-image: url(../img/footer-images/troy-logo-transparent.webp);
+  width: 61px;
+  height: 29px;
+  background-size: cover;
+}
+footer .container-main .list_foot .list-footer .footer1-app .master {
+  background-image: url(../img/footer-images/footer-master-card.webp);
+  width: 34px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .container-main .list_foot .list-footer .footer1-app .visa {
+  background-image: url(../img/footer-images/footer-visa-black.webp);
+  width: 72px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+footer .container-main .list_foot .list-footer .footer1-app .american {
+  background-image: url(../img/footer-images/footer-amex.webp);
+  width: 51px;
+  height: 22px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 3px;
+}
+footer .container-main .list_foot .list-footer .footer2-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 145px;
+}
+footer .container-main .list_foot .list-footer .footer2-app .app-store {
+  background-image: url(../img/footer-images/iosV2.svg);
+  width: 140px;
+  height: 41px;
+  background-repeat: no-repeat;
+}
+footer .container-main .list_foot .list-footer .footer2-app .google-play {
+  background-image: url(../img/footer-images/googleV2.svg);
+  width: 140px;
+  height: 41px;
+  background-repeat: no-repeat;
+}
+footer .container-main .list_foot .list-footer .footer2-app .huawei {
+  background-image: url(../img/footer-images/huaweiV2.svg);
+  width: 140px;
+  height: 41px;
+  background-repeat: no-repeat;
+}
+footer .container-main .list_foot .list-footer .footer3-app a {
+  color: #000;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-facebook-f {
+  border-radius: 20px;
+  padding: 6.5px 0px 0px 9px;
+  font-size: 15px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  transition: 0.3s ease-in;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-facebook-f:hover {
+  background-color: #1c1cb6;
+  transition: 0.3s ease-in-out;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-instagram {
+  transition: 0.3s ease-in;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-instagram:hover {
+  background-color: #9f0051;
+  transition: 0.3s ease-in-out;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-twitter {
+  transition: 0.3s ease-in;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-twitter:hover {
+  background-color: #0984bb;
+  transition: 0.3s ease-in-out;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-youtube {
+  border-radius: 20px;
+  padding: 6.5px 0px 0px 6px;
+  font-size: 15px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  transition: 0.3s ease-in;
+}
+footer .container-main .list_foot .list-footer .footer3-app a .fa-youtube:hover {
+  background-color: #c92c2c;
+  transition: 0.3s ease-in-out;
+}
+footer .container-main .list_foot .list-footer .footer3-app a i {
+  border-radius: 20px;
+  padding: 6.5px 0px 0px 7.5px;
+  font-size: 15px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+}
+footer .container-main .list_foot .list-footer .footer4-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+}
+footer .container-main .list_foot .list-footer .footer4-app a .qr-code {
+  width: 90px;
+  height: 101px;
+  background-color: #fff;
+  padding: 5px;
+}
+footer .container-main .list_foot .list-footer .footer4-app a .qr-code img {
+  width: 80px;
+}
+footer .container-main .list_foot .list-footer .footer4-app a .tr-go {
+  background-image: url(../img/footer-images/trust-stamp.webp);
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .container-main .list_foot .list-footer button {
+  border: solid 1px #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  width: 95px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer .container-main .list_foot .list-footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+}
+footer .container-main .list_foot .list-footer ul li {
+  font-size: 13px;
+  color: #fff;
+}
+footer .container-main .list_foot .list-footer a {
+  color: #fff;
+}
+footer .container-main .list_foot .list-footer h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+footer .container-main .list_foot .list-footer span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer .footer-foot {
+  padding: 10px;
+  background: #2d2d2d;
+}
+footer .footer-foot .container-main .foot-flex {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-foot .container-main .foot-flex span {
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+  font-family: system-ui;
+  letter-spacing: 0.12px;
+}
+footer .footer-foot .container-main .foot-flex .footer-link ul {
+  display: flex;
+  justify-content: space-between;
+  width: 395px;
+}
+footer .footer-foot .container-main .foot-flex .footer-link ul li a {
+  font-size: 11.7px;
+  color: #fff;
+  font-family: system-ui;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
